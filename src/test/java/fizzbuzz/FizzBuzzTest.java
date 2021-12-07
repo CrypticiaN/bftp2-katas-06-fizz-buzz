@@ -24,4 +24,22 @@ public class FizzBuzzTest {
         String respuesta = juego.responder(2);
         assertThat(respuesta, equalTo("2"));
     }
+
+    @Test
+    void laRespuestaA3EsFizz() {
+        String respuesta = juego.responder(Fizz);
+        assertThat(respuesta, equalTo("Fizz"));
+    }
+
+    @Test
+    void laRespuestaA5EsBuzz() {
+        String respuesta = juego.responder(Buzz);
+        assertThat(respuesta, equalTo("Buzz"));
+    }
+
+    @Test
+    void laRespuestaA15EsFizzBuzz() {
+        String respuesta = juego.responder(FizzBuzz);
+        assertThat(respuesta, equalTo("FizzBuzz"));
+    }
 }
